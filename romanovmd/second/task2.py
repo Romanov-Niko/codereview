@@ -1,11 +1,10 @@
 """
-Порахувати скільки в рядку цілих чисел
+Порахувати кількість чисел в рядку
 """
 
 text=input("Введіть текст - ")
-splited_text = text.split()
-count = 0
-for i in splited_text:
-    if isinstance(i, int):
+count=0
+for i in text:
+    if i in "0123456789":
         count = count+1
 print(count)
