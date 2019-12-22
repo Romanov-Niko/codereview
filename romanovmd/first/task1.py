@@ -17,13 +17,13 @@ def find_most_frequent():
     for word in get_splitted_text(text):
         lowertext.append(word.lower())
     for i in lowertext:
-    for j in lowertext:
-        if i == j:
-            count = count + 1
-        if count > 1:
-            lowertext.remove(i)
-            count=0
-    count=0
+        for j in lowertext:
+            if i == j:
+                count = count + 1
+            if count > 1:
+                lowertext.remove(i)
+                count=0
+        count=0
     return lowertext
 
 print(find_most_frequent())
