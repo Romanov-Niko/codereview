@@ -15,7 +15,7 @@ def find_most_frequent():
     lowertext = []
     count = 0
     for word in get_splitted_text(text):
-        lowertext.append(word[0].lower()+word[1:])
+        lowertext.append(word.lower())
     for i in lowertext:
         for j in lowertext:
             if i == j:
