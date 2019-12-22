@@ -8,7 +8,7 @@ output: [Hey, Eliza]
 import re
 
 def get_splitted_text(text):
-    return re.split('[ ,.:;!?-]', text)
+    return re.split('[ ,.:;!?-]+', text)
 
 def find_most_frequent():
     text = input("Введіть текст: ")
